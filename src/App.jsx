@@ -3,6 +3,7 @@ import './App.css'
 import Main from './components/organisms/Main'
 import { LifeCycleReact } from './views/LifeCycleReact';
 import Comp1 from './components/organisms/Comp1';
+// import TraficLight from './components/organisms/TraficLight';
 import Users from './components/organisms/Users';
 
 function App() {
