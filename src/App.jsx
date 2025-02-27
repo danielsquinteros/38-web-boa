@@ -3,8 +3,6 @@ import './App.css'
 import Main from './components/organisms/Main'
 import { LifeCycleReact } from './views/LifeCycleReact';
 import Comp1 from './components/organisms/Comp1';
-// import TraficLight from './components/organisms/TraficLight';
-import Users from './components/organisms/Users';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,8 +37,7 @@ function App() {
             <h4>Estoy pasando este elemento h4</h4>
           </Comp1>
       </div>
-      {/* <TraficLight /> */}
-      <Users />
+      <h1>Inicio de la aplicación</h1>
     </>
   )
 }
