@@ -38,24 +38,24 @@ const Issues = () => {
         <>
         
            {
-            issues.map((issue) => {
-                return (
-                    <div key={issue.id} style={{border: '1px solid black'}}>
-                        <p>id: {issue.id}</p>
-                        <a href={issue.html_url} target="_blank">
-                            <h6>{issue.title}</h6>
-                        </a>
-                        <p>Usuario que abrio el tema: {issue.user.login}</p>
-                        {
-                            issue.labels.map((label) => {
-                                return (<div key={label.id} style={{border: '1px solid black', borderRadius: '20px', 'backgroundColor': 'gray', display: 'inline-block'}}>
-                                    <p>{label.name}</p>
-                                </div>)
-                            })
-                        }
-                    </div>
-                )
-            })
+                issues.map((issue) => {
+                    return (
+                        <div key={issue.id} style={{border: '1px solid black'}}>
+                            <p>id: {issue.id}</p>
+                            <a href={issue.html_url} target="_blank">
+                                <h6>{issue.title}</h6>
+                            </a>
+                            <p>Usuario que abrio el tema: {issue.user.login}</p>
+                            {
+                                issue.labels.map((label) => {
+                                    return (<div key={label.id} style={{border: '1px solid black', borderRadius: '20px', 'backgroundColor': 'gray', display: 'inline-block'}}>
+                                        <p>{label.name}</p>
+                                    </div>)
+                                })
+                            }
+                        </div>
+                    )
+                })
            } 
         </>
     )
